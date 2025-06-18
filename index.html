@@ -1,120 +1,53 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mehedi's Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background: #111;
-            color: white;
-            padding: 20px 10px;
-            text-align: center;
-        }
-        nav {
-            margin-top: 10px;
-        }
-        nav a {
-            margin: 0 10px;
-            color: white;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 1rem;
-        }
-        section {
-            padding: 40px 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
-        h2 {
-            margin-top: 0;
-        }
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-        }
-        .gallery img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-        footer {
-            background: #111;
-            color: white;
-            text-align: center;
-            padding: 20px 10px;
-        }
-        .icon {
-            font-size: 1.5rem;
-            margin: 0 10px;
-            color: white;
-        }
-        .icon:hover {
-            color: #1da1f2;
-        }
-        @media (max-width: 600px) {
-            nav a {
-                display: block;
-                margin: 10px 0;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mehedi's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1><i class="fas fa-code"></i> Mehedi's Portfolio</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header><section id="about">
+  <header>
+    <h1>👨‍💻 Mehedi</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <img src="assets/your-image.jpg" alt="Profile Image" />
+    <h2>Web Developer | Freelancer</h2>
+    <p>Welcome to my portfolio website.</p>
+  </section>
+
+  <section id="about">
     <h2>About Me</h2>
-    <p>I am a passionate web developer who loves building responsive and modern websites. Skilled in HTML, CSS, and JavaScript, I aim to create user-friendly digital experiences.</p>
-</section>
+    <p>I’m a passionate web developer from Bangladesh, building modern and responsive websites.</p>
+  </section>
 
-<section id="projects">
-    <h2>Project Gallery</h2>
-    <div class="gallery">
-        <img src="img1.jpg" alt="Project 1">
-        <img src="img2.jpg" alt="Project 2">
-        <img src="img3.jpg" alt="Project 3">
-    </div>
-</section>
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Portfolio Website</strong> – Personal portfolio hosted on GitHub</li>
+      <li><strong>Business Website</strong> – Clean responsive website for small businesses</li>
+    </ul>
+  </section>
 
-<section id="contact">
+  <section id="contact">
     <h2>Contact Me</h2>
     <p>Email: mehedi@example.com</p>
-    <p>Phone: +8801XXXXXXXXX</p>
-</section>
-
-<footer>
-    <div>
-        <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
-        <a href="#" class="icon"><i class="fab fa-linkedin"></i></a>
-        <a href="#" class="icon"><i class="fab fa-github"></i></a>
+    <div class="socials">
+      <a href="https://github.com/yourusername">GitHub</a>
+      <a href="https://linkedin.com/in/yourprofile">LinkedIn</a>
     </div>
-    <p>Total Visitors: <span id="visitorCount">Loading...</span></p>
+  </section>
+
+  <footer>
+    <p>Visitors: <span id="visitor-count">Loading...</span></p>
     <p>&copy; 2025 Mehedi</p>
-</footer>
-
-<script>
-    // Simulate visitor count with localStorage
-    let visits = localStorage.getItem('visitCount') || 0;
-    visits++;
-    localStorage.setItem('visitCount', visits);
-    document.getElementById('visitorCount').textContent = visits;
-</script>
-
+  </footer>
 </body>
 </html>
