@@ -3,51 +3,75 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mehedi's Portfolio</title>
+  <title>Mehedi | Web Developer</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <script src="script.js" defer></script>
 </head>
 <body>
-  <header>
-    <h1>👨‍💻 Mehedi</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <header id="header">
+    <div class="container">
+      <h1 class="logo">Mehedi</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <section id="hero">
-    <img src="assets/your-image.jpg" alt="Profile Image" />
-    <h2>Web Developer | Freelancer</h2>
-    <p>Welcome to my portfolio website.</p>
+    <div class="hero-content">
+      <img src="assets/your-image.jpg" alt="Mehedi" class="hero-img"/>
+      <h2>Hi, I'm Mehedi</h2>
+      <p>Frontend Developer | Freelancer | Student</p>
+      <a href="#contact" class="btn">Hire Me</a>
+    </div>
   </section>
 
   <section id="about">
-    <h2>About Me</h2>
-    <p>I’m a passionate web developer from Bangladesh, building modern and responsive websites.</p>
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I'm a passionate frontend developer with experience in building responsive, modern websites using HTML, CSS, and JavaScript. I love turning ideas into real, live websites.</p>
+    </div>
   </section>
 
   <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>Portfolio Website</strong> – Personal portfolio hosted on GitHub</li>
-      <li><strong>Business Website</strong> – Clean responsive website for small businesses</li>
-    </ul>
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>Personal portfolio built with HTML, CSS, JS.</p>
+        </div>
+        <div class="project-card">
+          <h3>Business Site</h3>
+          <p>Clean layout for a small business with contact form and services page.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: mehedi@example.com</p>
-    <div class="socials">
-      <a href="https://github.com/yourusername">GitHub</a>
-      <a href="https://linkedin.com/in/yourprofile">LinkedIn</a>
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Email: mehedi@example.com</p>
+      <div class="social-links">
+        <a href="https://github.com/yourusername"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/yourprofile"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:mehedi@example.com"><i class="fas fa-envelope"></i></a>
+      </div>
     </div>
   </section>
 
   <footer>
-    <p>Visitors: <span id="visitor-count">Loading...</span></p>
-    <p>&copy; 2025 Mehedi</p>
+    <div class="container">
+      <p>Visitors: <span id="visitor-count">Loading...</span></p>
+      <p>&copy; 2025 Mehedi. All Rights Reserved.</p>
+    </div>
   </footer>
 </body>
 </html>
